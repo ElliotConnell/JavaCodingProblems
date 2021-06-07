@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Problem3
-comment1.params=numArray\ rotations
+comment1.params=numbers\ offset
 comment1.target=int[]\ solution(int[],\ int)
 comment2.params=
 comment2.target=void\ tester()
