@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Problem3
-comment0.text=\r\n\ Write\ a\ description\ of\ Problem3\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=numArray\ rotations
 comment1.target=int[]\ solution(int[],\ int)
 comment2.params=

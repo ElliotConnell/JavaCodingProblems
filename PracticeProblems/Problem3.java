@@ -5,6 +5,8 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
+import java.util.Arrays;
+
 public class Problem3 {
     
     public int[] solution(int[] numArray, int rotations) {
@@ -28,15 +30,15 @@ public class Problem3 {
     public void tester() {
         int[] test1 = {3, 8, 9, 7, 6};
         int[] result = solution(test1, 3);
-        System.out.println(result);
+        System.out.println(Arrays.toString(result));
         
         int[] test2 = {0, 0, 0};
         result = solution(test2, 1);
-        System.out.println(result);
+        System.out.println(Arrays.toString(result));
         
         int[] test3 = {1, 2, 3, 4};
         result = solution(test3, 4);
-        System.out.println(result);
+        System.out.println(Arrays.toString(result));
     }
     
     
