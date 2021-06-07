@@ -33,38 +33,37 @@ public class Problem2 {
     private int solution(int num){
         String binaryString = Integer.toBinaryString(num);
         int longestString = 0;
-        boolean containsValidString =false;
-        //check if string contains valid string
         int start = binaryString.indexOf('1');
-        int end = binaryString.indexOf('1', start + 1);
-        String substring =  binaryString.substring(start+1, end);
-        int length = substring.length();
         
-        if (end == -1)
         
-        return length;
+        while (true){
+            
+            int end = binaryString.indexOf('1', start + 1);
+            
+            if (end == -1) {
+                break;
+            }
+            
+            String substring =  binaryString.substring(start+1, end);
+            int substringLength = substring.length();
+            
+            if (substringLength > longestString) {
+                longestString = substringLength;         
+            }
+            
+            if (substring.isEmpty()){
+                break;
+            }
+            start = end;
+            substring = "";
+        }
+
+        return longestString;
     }
 
 
         
-        //for (int i = 1; i< binary.length(); i++){
 
-            //if (binary.charAt(i) == '0') {
-            //&& (flag == true)){
-               //count += 1;
-               // if (count > longest){
-                 //   longest = count;
-               // }
-           // }
-           // if (binary.charAt(i) == '1'){
-            //    count = 0;
-                //if (flag = true){
-                //    i = i -1;
-                //    flag = false;
-                //}
-
-           // }
-    
 
 
     
