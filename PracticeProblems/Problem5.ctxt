@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Problem5
+comment0.text=\r\n\ Write\ a\ description\ of\ Problem5\ here.\r\n\ \r\n\ A\ small\ frog\ wants\ to\ get\ to\ the\ other\ side\ of\ the\ road.\ The\ frog\ is\ currently\ located\ at\ position\ X\ and\ wants\ to\ get\ to\ a\ position\ greater\ than\ or\ equal\ to\ Y.\ The\ small\ frog\ always\ jumps\ a\ fixed\ distance,\ D.\r\n\r\n\ Count\ the\ minimal\ number\ of\ jumps\ that\ the\ small\ frog\ must\ perform\ to\ reach\ its\ target.\r\n\r\n\ Write\ a\ function\:\r\n\r\n\ class\ Solution\ {\ public\ int\ solution(int\ X,\ int\ Y,\ int\ D);\ }\r\n\r\n\ that,\ given\ three\ integers\ X,\ Y\ and\ D,\ returns\ the\ minimal\ number\ of\ jumps\ from\ position\ X\ to\ a\ position\ equal\ to\ or\ greater\ than\ Y.\r\n\r\n\ For\ example,\ given\:\r\n\r\n\ X\ \=\ 10\r\n\ Y\ \=\ 85\r\n\ D\ \=\ 30\r\n\ the\ function\ should\ return\ 3,\ because\ the\ frog\ will\ be\ positioned\ as\ follows\:\r\n\r\n\ after\ the\ first\ jump,\ at\ position\ 10\ +\ 30\ \=\ 40\r\n\ after\ the\ second\ jump,\ at\ position\ 10\ +\ 30\ +\ 30\ \=\ 70\r\n\ after\ the\ third\ jump,\ at\ position\ 10\ +\ 30\ +\ 30\ +\ 30\ \=\ 100\r\n\ Write\ an\ efficient\ algorithm\ for\ the\ following\ assumptions\:\r\n\r\n\ X,\ Y\ and\ D\ are\ integers\ within\ the\ range\ [1..1,000,000,000];\r\n\ X\ \u2264\ Y.\r\n\ \r\n\ @author\ (Elliot\ Connell)\ \r\n\ @version\ (08/06/21)\r\n
+comment1.params=start\ finish\ distanceJumped
+comment1.target=int\ solution(int,\ int,\ int)
+comment2.params=start\ finish\ distanceJumped
+comment2.target=int\ option2(int,\ int,\ int)
+comment3.params=
+comment3.target=void\ tester()
+numComments=4
