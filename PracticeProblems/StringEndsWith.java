@@ -15,7 +15,17 @@
 public class StringEndsWith {
     
     private boolean strEndsWith(String string, String str) {
+        // generate int variable length of str
         
+        // generate String variable of the last N characters of string
+        // N being the length of str
+        
+        // if new string equals str
+        
+            // return true
+            
+        // else
+            // return false
         
         return false;
     }
