@@ -19,5 +19,24 @@ public class StringEndsWith {
         
         return false;
     }
+    
+    public void tester(){
+        
+        boolean result = strEndsWith("abc", "bc");
+        System.out.println("expected result = true. returns = " + result);
+        
+        result = strEndsWith("abc", "d");
+        System.out.println("expected result = false. returns = " + result);
+        
+        result = strEndsWith("longer test statement", "ment");
+        System.out.println("expected result = true. returns = " + result);
+        
+        result = strEndsWith("", "abc");
+        System.out.println("expected result = false. returns = " + result);
+        
+        result = strEndsWith("abc", "abcd");
+        System.out.println("expected result = false. returns = " + result);
+                
+    }
 
 }

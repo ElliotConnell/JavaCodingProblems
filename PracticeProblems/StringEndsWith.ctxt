@@ -3,4 +3,6 @@ comment0.target=StringEndsWith
 comment0.text=\r\n\ Write\ a\ description\ of\ StringEndsWith\ here.\r\n\ \r\n\ Complete\ the\ solution\ so\ that\ it\ returns\ true\ if\ the\ first\ argument(string)\ passed\ in\ ends\ with\ the\ 2nd\ argument\ (also\ a\ string).\r\n\r\n\ Examples\:\r\n\r\n\ strEndsWith('abc',\ 'bc')\ --\ returns\ true\r\n\ strEndsWith('abc',\ 'd')\ --\ returns\ false\r\n\ \r\n\ @author\ (Elliot\ Connell)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=string\ str
 comment1.target=boolean\ strEndsWith(java.lang.String,\ java.lang.String)
-numComments=2
+comment2.params=
+comment2.target=void\ tester()
+numComments=3
