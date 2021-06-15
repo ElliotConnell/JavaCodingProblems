@@ -16,18 +16,17 @@ public class StringEndsWith {
     
     private boolean strEndsWith(String string, String str) {
         // generate int variable length of str
+        boolean result = false;
         int strLength = str.length();
         int stringLength = string.length();
-        // generate String variable of the last N characters of string
-        // N being the length of str
-        String endSubstring = string.substring(stringLength-strLength);
-        // if new string equals str
-        if (endSubstring.equals(str)){  
-            return true;
+        if (strLength <= stringLength){
+            String endSubstring = string.substring(stringLength-strLength);
+            if (endSubstring.equals(str)){
+                result = true;
+            }
         }
-        else{
-            return false;
-        }
+        return result;
+
     }
     
     public void tester(){
