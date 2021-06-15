@@ -21,10 +21,38 @@
  * @version (15/06/21)
  */
 
+import java.util.*;
+
 public class SumOfDigits {
     
     private int sumOfDigits(int value){
         int result = 0;
+        
+        // starting a 1, loop until result is found
+        for(int number = 1; number < 1000000; number++){
+            ArrayList<Integer> digits = new ArrayList<Integer>();
+            String numString = Integer.toString(number);
+            // split number into digits
+            for (int index = 0; index < numString.length(); index++){
+                char intChar = numString.charAt(index);
+                int charInteger = Character.getNumericValue(intChar);
+                
+                digits.add(charInteger);               
+            }
+            
+            int sum = 0; 
+            for (int i = 0; i<digits.size(); i++){
+                sum += digits.get(i);                
+            }
+
+            // if sum of digits equals value result equals number
+            if (sum == value) {
+                result = number;
+                break;
+            }
+            
+        }
+        
         
         return result;
     }
