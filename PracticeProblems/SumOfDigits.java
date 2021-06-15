@@ -24,21 +24,14 @@
 import java.util.*;
 
 public class SumOfDigits {
-    
+
     private int sumOfDigits(int value){
         int result = 0;
         
         // starting a 1, loop until result is found
-        for(int number = 1; number < 1000000; number++){
-            ArrayList<Integer> digits = new ArrayList<Integer>();
-            String numString = Integer.toString(number);
-            // split number into digits
-            for (int index = 0; index < numString.length(); index++){
-                char intChar = numString.charAt(index);
-                int charInteger = Character.getNumericValue(intChar);
-                
-                digits.add(charInteger);               
-            }
+        for(int number = 1; number <= 1000000; number++){
+            ArrayList<Integer> digits = digitsList(number);
+            
             
             int sum = 0; 
             for (int i = 0; i<digits.size(); i++){
@@ -55,6 +48,21 @@ public class SumOfDigits {
         
         
         return result;
+    }
+    
+    private ArrayList<Integer> digitsList(int number) {
+        ArrayList<Integer> digits = new ArrayList<Integer>();
+        
+        String numString = Integer.toString(number);
+
+        for (int index = 0; index < numString.length(); index++){
+            char intChar = numString.charAt(index);
+            int charInteger = Character.getNumericValue(intChar);
+            
+            digits.add(charInteger);               
+        }
+        
+        return digits;
     }
     
     public void tester(){
