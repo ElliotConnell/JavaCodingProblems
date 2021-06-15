@@ -3,7 +3,7 @@
  * Write a description of SumOfDigits here.
  * 
  * Get a number N and find the lowest value where the sum of all the digits equals N
- * Focus on correctness not speed
+ * Focus on correctness not performance
  * 
  * For example: N = 15
  * possible combinations = 79, 88, 97, 1159
@@ -27,8 +27,9 @@ public class SumOfDigits {
 
     private int sumOfDigits(int value){
         int result = 0;
+        int number = 1;
         
-        for(int number = 1; number <= 1000000; number++){
+        while(result == 0){
             int sum = 0;
             ArrayList<Integer> digits = digitsList(number);
             
@@ -38,9 +39,8 @@ public class SumOfDigits {
 
             if (sum == value) {
                 result = number;
-                break;
             }
-            
+            number++;            
         }
         return result;
     }
