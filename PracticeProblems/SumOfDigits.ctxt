@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=SumOfDigits
+comment0.text=\r\n\ Write\ a\ description\ of\ SumOfDigits\ here.\r\n\ \r\n\ Get\ a\ number\ N\ and\ find\ the\ lowest\ value\ where\ the\ sum\ of\ all\ the\ digits\ equals\ N\r\n\ Focus\ on\ correctness\ not\ speed\r\n\ \r\n\ For\ example\:\ N\ \=\ 15\r\n\ possible\ combinations\ \=\ 79,\ 88,\ 97,\ 1159\r\n\ returns\ 79\r\n\ \r\n\ N\ \=\ 7\r\n\ possible\ combinations\ \=\ 7\r\n\ returns\ 7\r\n\ \r\n\ N\ \=\ 19\r\n\ possible\ combinations\ \=\ 199,\ 289,\ 298,\ 379,\ 397\r\n\ \r\n\ \r\n\ @author\ (Elliot\ Connell)\ \r\n\ @version\ (15/06/21)\r\n
+comment1.params=value
+comment1.target=int\ sumOfDigits(int)
+comment2.params=
+comment2.target=void\ tester()
+numComments=3
