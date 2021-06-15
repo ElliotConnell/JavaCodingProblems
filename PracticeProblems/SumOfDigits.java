@@ -28,31 +28,25 @@ public class SumOfDigits {
     private int sumOfDigits(int value){
         int result = 0;
         
-        // starting a 1, loop until result is found
         for(int number = 1; number <= 1000000; number++){
+            int sum = 0;
             ArrayList<Integer> digits = digitsList(number);
             
-            
-            int sum = 0; 
             for (int i = 0; i<digits.size(); i++){
                 sum += digits.get(i);                
             }
 
-            // if sum of digits equals value result equals number
             if (sum == value) {
                 result = number;
                 break;
             }
             
         }
-        
-        
         return result;
     }
     
     private ArrayList<Integer> digitsList(int number) {
-        ArrayList<Integer> digits = new ArrayList<Integer>();
-        
+        ArrayList<Integer> digits = new ArrayList<Integer>();        
         String numString = Integer.toString(number);
 
         for (int index = 0; index < numString.length(); index++){
