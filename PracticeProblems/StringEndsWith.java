@@ -15,7 +15,6 @@
 public class StringEndsWith {
     
     private boolean strEndsWith(String string, String str) {
-        // generate int variable length of str
         boolean result = false;
         int strLength = str.length();
         int stringLength = string.length();
@@ -26,7 +25,9 @@ public class StringEndsWith {
             }
         }
         return result;
-
+        
+        // alternate solution found using string function endsWith()
+        // return string.endsWith(str);
     }
     
     public void tester(){
