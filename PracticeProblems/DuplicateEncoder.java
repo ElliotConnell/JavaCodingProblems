@@ -12,8 +12,33 @@
 public class DuplicateEncoder {
     
     public String encode(String word) {
+        // create the encoded string to return
         String result = "";
+        // create the empty HashMap to store number of occurances each character occurs
         
+        // populate the HashMap
+        // loop throught the word string
+           
+            // if hashmap doesnt contains char
+           
+                //add char to map with value of one
+                
+            // else
+            
+                // increase value of char by one
+                
+        //encode the message
+        // loop through the string
+            
+            // if value of char is more than one
+            
+               // add '(' to result string
+               
+            // else
+            
+               // add ')' to result string
+        
+        // return the encoded string
         return result;        
     }
     
