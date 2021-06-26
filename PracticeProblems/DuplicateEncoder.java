@@ -9,24 +9,36 @@
  * @author (Elliot Connell) 
  * @version (25/06/21)
  */
+
+import java.util.*;
+
 public class DuplicateEncoder {
     
     public String encode(String word) {
         // create the encoded string to return
         String result = "";
         // create the empty HashMap to store number of occurances each character occurs
-        
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
         // populate the HashMap
         // loop throught the word string
-           
+        for (int index = 0; index < word.length(); index++){
+            char indexChar = word.charAt(index);           
+            if (Character.isLetter(indexChar)){
+                indexChar = Character.toLowerCase(indexChar);
+            }
             // if hashmap doesnt contains char
-           
+            if (!map.containsKey(indexChar)){
+                map.put(indexChar, 1); 
                 //add char to map with value of one
-                
+            }
             // else
-            
+            else{
                 // increase value of char by one
-                
+                map.put(indexChar, map.get(indexChar)+ 1);
+            }
+        }
+        System.out.println(map);
+               
         //encode the message
         // loop through the string
             

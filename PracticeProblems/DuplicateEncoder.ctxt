@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=DuplicateEncoder
-comment0.text=\r\n\ Write\ a\ description\ of\ DuplicateEncoder\ here.\r\n\ \r\n\ The\ goal\ of\ this\ exercise\ is\ to\ convert\ a\ string\ to\ a\ new\ string\ where\ each\ character\ in\ the\ new\ string\ is\ \r\n\ "("\ if\ that\ character\ appears\ only\ once\ in\ the\ original\ string,\ or\ ")"\ if\ that\ character\ appears\ more\ than\ \r\n\ once\ in\ the\ original\ string.\ Ignore\ capitalization\ when\ determining\ if\ a\ character\ is\ a\ duplicate.\r\n\ \r\n\ @author\ (Elliot\ Connell)\ \r\n\ @version\ (25/06/21)\r\n
 comment1.params=word
 comment1.target=java.lang.String\ encode(java.lang.String)
 comment2.params=
