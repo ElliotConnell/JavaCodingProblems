@@ -41,14 +41,22 @@ public class DuplicateEncoder {
                
         //encode the message
         // loop through the string
-            
+        for (int index = 0; index < word.length(); index++) {
+            char indexChar = word.charAt(index);
+            if (Character.isLetter(indexChar)){
+                indexChar = Character.toLowerCase(indexChar);
+            }
             // if value of char is more than one
-            
-               // add '(' to result string
-               
+            if (map.get(indexChar) > 1){
+                // add '(' to result string
+                result = result + ")";
+            }           
             // else
-            
+            else {            
                // add ')' to result string
+               result = result + "(";
+            }
+        }
         
         // return the encoded string
         return result;        
