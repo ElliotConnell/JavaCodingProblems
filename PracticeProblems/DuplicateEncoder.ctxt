@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=DuplicateEncoder
 comment1.params=word
-comment1.target=java.lang.String\ encode(java.lang.String)
-comment2.params=
-comment2.target=void\ tester()
-numComments=3
+comment1.target=java.util.HashMap\ createHashMap(java.lang.String)
+comment2.params=word
+comment2.target=java.lang.String\ encode(java.lang.String)
+comment3.params=
+comment3.target=void\ tester()
+numComments=4

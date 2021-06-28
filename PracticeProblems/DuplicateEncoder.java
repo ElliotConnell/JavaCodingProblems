@@ -14,9 +14,9 @@ import java.util.*;
 
 public class DuplicateEncoder {
     
-    public String encode(String word) {
-        String result = "";
+    private HashMap<Character, Integer> createHashMap(String word){
         HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        
         for (int index = 0; index < word.length(); index++){
             char indexChar = word.charAt(index);           
             if (Character.isLetter(indexChar)){
@@ -29,20 +29,26 @@ public class DuplicateEncoder {
                 map.put(indexChar, map.get(indexChar)+ 1);
             }
         }
-
+        return map;
+    }
+    
+    public String encode(String word) {
+        StringBuilder result = new StringBuilder();
+        HashMap<Character, Integer> map = createHashMap(word);
+        
         for (int index = 0; index < word.length(); index++) {
             char indexChar = word.charAt(index);
             if (Character.isLetter(indexChar)){
                 indexChar = Character.toLowerCase(indexChar);
             }
             if (map.get(indexChar) > 1){
-                result = result + ")";
+                result.append( ")");
             }           
             else {            
-               result = result + "(";
+               result.append("(");
             }
         }
-        return result;        
+        return result.toString();        
     }
     
     public void tester(){
