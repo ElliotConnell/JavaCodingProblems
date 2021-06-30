@@ -19,9 +19,6 @@ public class DuplicateEncoder {
         
         for (int index = 0; index < word.length(); index++){
             char indexChar = word.charAt(index);           
-            if (Character.isLetter(indexChar)){
-                indexChar = Character.toLowerCase(indexChar);
-            }
             if (!map.containsKey(indexChar)){
                 map.put(indexChar, 1); 
             }
@@ -34,13 +31,11 @@ public class DuplicateEncoder {
     
     public String encode(String word) {
         StringBuilder result = new StringBuilder();
+        word = word.toLowerCase();
         HashMap<Character, Integer> map = createHashMap(word);
         
         for (int index = 0; index < word.length(); index++) {
             char indexChar = word.charAt(index);
-            if (Character.isLetter(indexChar)){
-                indexChar = Character.toLowerCase(indexChar);
-            }
             if (map.get(indexChar) > 1){
                 result.append( ")");
             }           
